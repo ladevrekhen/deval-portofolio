@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKU Bureau Internship | Deval Kerenhak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .project-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-hero .role-context {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .project-hero .summary {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            color: var(--text-color);
+            max-width: 800px;
+        }
+
+        .project-hero-img {
+            max-width: 1000px;
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            margin: 0 auto 4rem;
+            display: block;
+            background-color: #e2e8f0;
+        }
+
+        .project-content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 992px) {
+            .project-content-grid {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-block p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-container {
+            max-width: 1000px;
+            margin: 4rem auto 0;
+        }
+
+        .gallery-container h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-img {
+            aspect-ratio: 4 / 3;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            background-color: #e2e8f0;
+            transition: var(--transition);
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-md);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">DEVAL Kerenhak <span>S. Kati</span></a>
+            <a href="index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+    </nav>
+    <section class="section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="project-hero">
+                <h1>MKU Bureau Internship</h1>
+                <p class="role-context">Content Designer & Event Planning</p>
+                <p class="summary">Mengembangkan konten digital dan strategi komunikasi akademik.</p>
+            </div>
+
+            <img src="assets/Intern MKU.jpg" alt="Project Hero" class="project-hero-img">
+
+            <div class="project-content-grid">
+                <div class="left-col">
+                    <div class="content-block">
+                        <h2>Overview</h2>
+                        <p>Fokuskan pada pembuatan konten visual, pengelolaan media sosial, dan dukungan acara kuliah
+                            tamu.</p>
+                    </div>
+                    <div class="content-block">
+                        <h2>Role & Contribution</h2>
+                        <p>Explain what you specifically did, your responsibilities, and how you contributed to the
+                            execution and success of the project.</p>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="content-block">
+                        <h2>Impact</h2>
+                        <p>Detail the results, outcomes, and what changed or improved because of this project. Use
+                            metrics or qualitative success points if possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <h2>Gallery</h2>
+                <div class="detail-gallery-grid">
+                    <img src="assets/Intern 1.png" alt="Gallery Image 1" class="gallery-img">
+                    <img src="assets/Intern 2.jpeg" alt="Gallery Image 2" class="gallery-img">
+                    <img src="assets/Intern 3.jpg" alt="Gallery Image 3" class="gallery-img">
+                    <img src="assets/Intern 4.jpg" alt="Gallery Image 4" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

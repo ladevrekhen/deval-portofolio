@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Experience | Deval Kerenhak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .experience-page-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-header-compact {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--light-grey);
+            padding-bottom: 1rem;
+            color: var(--primary);
+        }
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+        @media (min-width: 1024px) {
+            .experience-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .compact-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .compact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .compact-card h4 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .compact-card .role {
+            color: var(--secondary);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">DEVAL Kerenhak <span>S. Kati</span></a>
+            <a href="index.html" class="btn btn-outline">Back to Home</a>
+        </div>
+    </nav>
+    <section class="section" style="padding-top: 150px;">
+        <div class="container experience-page-container">
+            <h1 style="text-align: center; margin-bottom: 4rem; font-size: 2.5rem;">All Experience</h1>
+            
+            <h2 class="section-header-compact">Projects & Leadership</h2>
+            <div class="experience-grid">
+                <div class="compact-card">
+                    <h4>Kolaborun 2026</h4>
+                    <p class="role">Public Relations Coordinator</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Soulinked Social Project</h4>
+                    <p class="role">Vice Project Manager</p>
+                </div>
+                <div class="compact-card">
+                    <h4>MKU Bureau Internship</h4>
+                    <p class="role">Content Designer & Event Planning</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Exhibition</h4>
+                    <p class="role">Treasurer</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Global Impact Day</h4>
+                    <p class="role">Team Member</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Interact Marketing</h4>
+                    <p class="role">Marketing Associate</p>
+                </div>
+            </div>
+
+            <h2 class="section-header-compact">Supporting Experience</h2>
+            <div class="experience-grid">
+                <div class="compact-card">
+                    <h4>Ocean Care</h4>
+                    <p class="role">Volunteer</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Peduly</h4>
+                    <p class="role">Volunteer</p>
+                </div>
+                <div class="compact-card">
+                    <h4>Kolaboraksi</h4>
+                    <p class="role">Volunteer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
