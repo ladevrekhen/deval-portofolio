@@ -1056,6 +1056,12 @@ img {
 
 }
 
+@media (max-width: 1024px) {
+    .hero-content-right {
+        padding-right: 2.5rem; /* Memberi jarak agar tidak mepet ke tepi layar di tablet */
+    }
+}
+
 @media (max-width: 768px) {
     /* Global Padding Reduction */
     .section {
@@ -1069,7 +1075,7 @@ img {
     /* Hero Section Responsive */
     .hero-split {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 5rem;
     }
 
     .hero-visual-left {
@@ -1079,6 +1085,7 @@ img {
     .hero-content-right {
         text-align: center;
         align-items: center;
+        padding-right: 0;
     }
 
     .hero-content-right h1 {
